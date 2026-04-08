@@ -1,0 +1,9 @@
+# Derleme sırasında oluşan devasa klasör (Kesinlikle atılmamalı)
+build/
+
+# VS Code'un senin bilgisayarına özel yerel ayarları
+.vscode/
+
+# Geçici dosyalar
+*~
+*.swp
