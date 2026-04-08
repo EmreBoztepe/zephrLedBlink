@@ -5,3 +5,5 @@ find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 project(blinky_led)
 
 target_sources(app PRIVATE src/main.c)
+target_sources(app PRIVATE src/threadA.c)
+target_sources(app PRIVATE src/threadB.c)
