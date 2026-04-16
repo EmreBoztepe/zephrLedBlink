@@ -8,8 +8,8 @@ static const struct gpio_dt_spec led1 = GPIO_DT_SPEC_GET(LED1_NODE, gpios);
 
 void Thread_B(void *dummy1, void *dummy2, void *dummy3)
 {
-        if (!gpio_is_ready_dt(&led1)) 
-        {
+    if (!gpio_is_ready_dt(&led1)) 
+    {
     }
 
     gpio_pin_configure_dt(&led1, GPIO_OUTPUT_ACTIVE);
