@@ -8,13 +8,8 @@ static const struct gpio_dt_spec ledGreen = GPIO_DT_SPEC_GET(LED0_NODE, gpios);
 
 void Thread_A(void *dummy1, void *dummy2, void *dummy3)
 {
-<<<<<<< HEAD
     if (!gpio_is_ready_dt(&led0)) 
     {
-=======
-        if (!gpio_is_ready_dt(&ledGreen)) 
-        {
->>>>>>> 0cd5edb (md file has been added. led variable names have been changed.)
     }
 
     gpio_pin_configure_dt(&ledGreen, GPIO_OUTPUT_ACTIVE);
