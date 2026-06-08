@@ -14,7 +14,5 @@ K_THREAD_DEFINE(thread_a, STACK_SIZE,
 				44, 0, 0);
 int main(void)
 {
-
-
     return 0;
 }
