@@ -6,8 +6,6 @@
 
 static const struct gpio_dt_spec ledOrange = GPIO_DT_SPEC_GET(LED1_NODE, gpios);
 
-
-
 static const struct adc_dt_spec adc_channels[] =
 {    
     ADC_DT_SPEC_GET_BY_IDX(DT_PATH(zephyr_user), 0),
@@ -56,8 +54,6 @@ void Thread_B(void *dummy1, void *dummy2, void *dummy3)
     while(1)
     {
         gpio_pin_toggle_dt(&ledOrange);
-
-
 
         adc_read_dt(&adc_channels[0], &sequences[0]);
 
